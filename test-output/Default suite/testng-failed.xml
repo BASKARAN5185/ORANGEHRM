@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testbase.DashboardPageTest">
+      <class name="testbase.PIMPageTest">
         <methods>
-          <include name="BUZpageVerify009"/>
           <include name="login"/>
-          <include name="elementscreenshot_employeeimg_TWBox_Qlbox_MAbox0010"/>
-          <include name="EmployeeDistributionbySubUnit"/>
+          <include name="Employeecreation"/>
         </methods>
-      </class> <!-- testbase.DashboardPageTest -->
+      </class> <!-- testbase.PIMPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

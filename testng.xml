@@ -10,6 +10,7 @@
     <classes>
       <class name="testbase.Login_Page_test"/>
       <class name="testbase.DashboardPageTest"/>
+      <class name="testbase.PIMPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

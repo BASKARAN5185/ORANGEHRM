@@ -18,6 +18,7 @@ public class PIMPage  extends BaseClass {
 		}
 		
 		// Define By objects for selectors
+		By pinpage=By.xpath("//a[@class='oxd-main-menu-item active']");
 		By breadcrumb = By.cssSelector("h6.oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module");
 		By navTab = By.cssSelector("span.oxd-topbar-body-nav-tab-item");
 		By employeeList = By.xpath("//*[text() = \"Employee List\"]");
@@ -41,42 +42,52 @@ public class PIMPage  extends BaseClass {
 		By passwordInput1 = By.xpath("//input[@type='password']");
 		By passwordInput2 = By.xpath("(//input[@type='password'])[2]");
 
-		void Employeelistclick() {
+		public void pinpage() {
+		
+			driver.findElement(pinpage).click();
+		}
+		
+		public void Employeelistclick() {
 			
 			driver.findElement(employeeList).click();
 		
 		}
 		
-		void Addemplyeeclick() {
+		public void Addemplyeeclick() {
 		
 			driver.findElement(addEmployee).click();
 		
 		}
 		
-		void Reportclick() {
+		public void Reportclick() {
 		
 			driver.findElement(reports).click();
 			
 		}
 		
-		void firstname(String firstname ) {
+		public void firstname(String firstname ) {
+			
 			driver.findElement(firstNameInput).sendKeys(firstname);
 		}
 		
-		void lastname(String lastname) {
-		     driver.findElement(lastNameInput).sendKeys(lastname);	
+		public void lastname(String lastname) {
+		    
+			driver.findElement(lastNameInput).sendKeys(lastname);	
 		}
 
-		void employeeimguploaf(String photoupload) {
+		public void employeeimguploaf(String photoupload) {
+		
 			driver.findElement(employeeImageActionButton).sendKeys(photoupload);
 			
 		}
 		
-		void pass1(String pass) {
+		public void pass1(String pass) {
+			
 			driver.findElement(passwordInput1).sendKeys(pass);
 		}
 		
-		void pass2(String pass2) {
+		public void pass2(String pass2) {
+			
 			driver.findElement(passwordInput2).sendKeys(pass2);
 		}
 		
